@@ -1,0 +1,111 @@
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text {
+  margin: 2em auto;
+}
+.bar-container {
+  background: #f0f0f0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.bar {
+  background: #00F260;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  #height: 40px;
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+  transition: width 400ms;
+  position: relative;
+}
+.btn {
+  outline: none;
+  margin: 2em auto;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  padding: 1em;
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.30);
+  cursor: pointer;
+  transition: transform 400ms;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+.btn:hover {
+  transform: translateY(-10px);
+}
+.progress-bar-icon {
+	justify-content: left;
+	position: absolute;
+	top: 25%;
+	right: 50px;
+}
+.progress-bar-icon img {
+	height: 100px;
+	width: 100px;
+	justify-content: left;
+	position: absolute;
+}
+
+.main-container {
+  background: #fafafa;
+  height: 200px;
+  width: 50%;
+  height: 30%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+}
+
+.text {
+  margin: 2em auto;
+}
+.row-container {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between; /* switched from default (flex-start, see below) */
+  background-color: teal;
+  width: 100%;
+  /*border-style: solid;*/
+}
+
+#action-panel-top {
+	height:100%;
+	position: relative;
+}
+
+#task-icon-btn {
+	position: relative;
+	top: 33%;
+	height: 33%;
+}
+#shmoop {
+	height: 100%;
+}
+
+
+
+#top-row {
+	height: 70%;
+}
+#bottom-row {
+	height: 20%;
+}
